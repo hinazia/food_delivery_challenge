@@ -1,0 +1,5 @@
+<%= @meal.name %>
+<%= @meal.price %>
+
+<%= link_to "Delete", meal_path(@meal),
+data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>

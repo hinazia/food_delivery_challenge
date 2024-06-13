@@ -7,3 +7,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Meal.destroy_all
+Customer.destroy_all
+
+Meal.create(name: "Biryani", price: "20$")
+Meal.create(name: "Karhai", price: "10$")
+Meal.create(name: "Shaslik", price: "15$")
+Meal.create(name: "Kebab", price: "16$")
+Meal.create(name: "Pulao", price: "25$")
+
+Customer.create(name: "Hina", address: "Korbinianstr. 56")
+Customer.create(name: "Sana", address: "Maxwellstr. 34")
+Customer.create(name: "Hina", address: "Instastr. 89")
